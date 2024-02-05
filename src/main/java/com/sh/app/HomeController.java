@@ -1,8 +1,7 @@
 package com.sh.app;
 
-
-import lombok.Value;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,7 +14,7 @@ public class HomeController {
     private String value;
 
     @GetMapping("/")
-    public ResponseEntity<?> home() {
-        return  ResponseEntity.ok("현재 profile은 %s입니다.".formatted(value));
+    public ResponseEntity<?> home(){
+        return ResponseEntity.ok("현재 profile은 %s입니다.".formatted(value));
     }
 }
