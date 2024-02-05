@@ -1,0 +1,9 @@
+# 사용자 정의 속성
+profile:
+  vlue: 'prod'
+spring:
+  datasource:
+    url:https://github.com/NLGZ/spring-devops-wallets.gi t
+    username:
+    password:
+    driver-class-name: oracle.jdbc.OracleDriver
